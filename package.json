@@ -1,0 +1,38 @@
+{
+  "name": "product-management-system",
+  "version": "1.0.0",
+  "description": "create storage product system...",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Ahmed Gamal",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "productName": "Product_Management",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "dist/**/*",
+      "/public/index.html",
+      "main.js",
+      "package.json"
+    ]
+  },
+  "type": "commonjs"
+}
